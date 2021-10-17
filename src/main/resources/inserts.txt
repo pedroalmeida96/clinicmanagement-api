@@ -1,1 +1,1 @@
-insert into clinicmanagement.reservation values (1, now() ,'pedro',now(),'pedro','PENDING');
+insert into clinicmanagement.appointment values (1, now() ,'pedro',now(),'pedro','PENDING');

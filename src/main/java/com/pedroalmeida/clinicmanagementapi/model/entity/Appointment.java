@@ -13,16 +13,16 @@ import java.time.LocalDateTime;
 @Entity
 @Data
 @Builder
-@Table(name = "RESERVATION", schema = "CLINICMANAGEMENT")
+@Table(name = "APPOINTMENT", schema = "CLINICMANAGEMENT")
 @NoArgsConstructor
 @AllArgsConstructor
-public class Reservation extends BaseObject {
+public class Appointment extends BaseObject {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "RESERVATION_ID", nullable = false, updatable = false)
+    @Column(name = "APPOINTMENT_ID", nullable = false, updatable = false)
     private Long id;
 
-    public enum ReservationStatus {
+    public enum AppointmentStatus {
         PENDING,
         APPROVED,
         DENIED,
@@ -31,7 +31,7 @@ public class Reservation extends BaseObject {
 
     @Column(name = "STATUS", nullable = false)
     @Enumerated(value = EnumType.STRING)
-    private ReservationStatus reservationStatus;
+    private AppointmentStatus AppointmentStatus;
 
 
 }
