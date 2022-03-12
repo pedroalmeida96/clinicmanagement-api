@@ -1,4 +1,4 @@
-package com.pedroalmeida.clinicmanagementapi.model.entity;
+package com.pedroalmeida.management.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

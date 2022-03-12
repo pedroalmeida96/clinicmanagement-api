@@ -1,4 +1,4 @@
-package com.pedroalmeida.clinicmanagementapi.model.enums;
+package com.pedroalmeida.management.model.enums;
 
 public class Mappings {
     public static final String API = "/api";

@@ -1,6 +1,6 @@
-package com.pedroalmeida.clinicmanagementapi.model.repository;
+package com.pedroalmeida.management.model.repository;
 
-import com.pedroalmeida.clinicmanagementapi.model.entity.Appointment;
+import com.pedroalmeida.management.model.entity.Appointment;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

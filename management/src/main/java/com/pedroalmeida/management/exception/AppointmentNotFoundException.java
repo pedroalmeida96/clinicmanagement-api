@@ -1,4 +1,4 @@
-package com.pedroalmeida.clinicmanagementapi.exception;
+package com.pedroalmeida.management.exception;
 
 public class AppointmentNotFoundException extends RuntimeException {
     public AppointmentNotFoundException(String s) {

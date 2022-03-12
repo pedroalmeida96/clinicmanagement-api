@@ -1,4 +1,4 @@
-package com.pedroalmeida.clinicmanagementapi.security;
+package com.pedroalmeida.management.security;
 
 import org.springframework.context.annotation.Configuration;
 

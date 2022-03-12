@@ -1,6 +1,6 @@
-package com.pedroalmeida.clinicmanagementapi.service;
+package com.pedroalmeida.management.service;
 
-import com.pedroalmeida.clinicmanagementapi.model.entity.Appointment;
+import com.pedroalmeida.management.model.entity.Appointment;
 
 import java.util.List;
 import java.util.Optional;

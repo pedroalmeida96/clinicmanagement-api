@@ -1,14 +1,11 @@
-package com.pedroalmeida.clinicmanagementapi.model.entity;
+package com.pedroalmeida.management.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 
 @Entity
 @Data
