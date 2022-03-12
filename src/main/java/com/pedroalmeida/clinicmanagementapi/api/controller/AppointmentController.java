@@ -53,7 +53,7 @@ public class AppointmentController {
             service.deleteAppointment(entity);
             return new ResponseEntity(HttpStatus.NO_CONTENT);
         }).orElseGet(() ->
-                new ResponseEntity("Transaction not found.", HttpStatus.BAD_REQUEST));
+                new ResponseEntity("Appointment not found.", HttpStatus.BAD_REQUEST));
     }
 
 }
