@@ -40,6 +40,7 @@ public class AppointmentServiceImpl implements AppointmentService {
      */
     @Override
     public Appointment insertAppointment(Appointment appointment) {
+        log.trace("Inserting appointment");
         repository.save(appointment);
         return appointment;
     }

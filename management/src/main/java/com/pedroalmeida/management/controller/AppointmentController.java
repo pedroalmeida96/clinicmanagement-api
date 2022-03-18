@@ -26,7 +26,6 @@ public class AppointmentController {
 
     @GetMapping(Mappings.GET_ALL)
     public ResponseEntity<List<Appointment>> getAll() {
-        log.trace("123");
         List<Appointment> list = service.getAllAppointments();
         return new ResponseEntity<>(list, HttpStatus.OK);
     }

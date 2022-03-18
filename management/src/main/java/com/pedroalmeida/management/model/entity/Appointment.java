@@ -1,11 +1,14 @@
 package com.pedroalmeida.management.model.entity;
 
+import com.pedroalmeida.management.model.enums.AppointmentStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 
 @Entity
 @Data
@@ -19,16 +22,21 @@ public class Appointment extends BaseObject {
     @Column(name = "APPOINTMENT_ID", nullable = false, updatable = false)
     private Long id;
 
-    public enum AppointmentStatus {
-        PENDING,
-        APPROVED,
-        DENIED,
-        CANCELED;
-    }
+    @Column(name = "PATIENT_NAME", length = 50, nullable = false)
+    private String patientName;
+
+    @Column(name = "DOCTOR_NAME", length = 50, nullable = false)
+    private String doctorName;
+
+    @Column(name = "ROOM", length = 50, nullable = false)
+    private String room;
 
     @Column(name = "STATUS", nullable = false)
     @Enumerated(value = EnumType.STRING)
     private AppointmentStatus AppointmentStatus;
 
+    @Column(name = "APPOINTMENT_DATE")
+    @Convert(converter = Jsr310JpaConverters.LocalDateConverter.class)
+    private LocalDate appointmentDate;
 
 }
