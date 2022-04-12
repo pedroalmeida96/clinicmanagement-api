@@ -1,4 +1,4 @@
-package com.pedroalmeida.management.model.entity;
+package com.pedroalmeida.shared;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

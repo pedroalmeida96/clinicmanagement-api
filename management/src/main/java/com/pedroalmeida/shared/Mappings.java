@@ -1,4 +1,4 @@
-package com.pedroalmeida.management.model.enums;
+package com.pedroalmeida.shared;
 
 public class Mappings {
     public static final String API = "/api";

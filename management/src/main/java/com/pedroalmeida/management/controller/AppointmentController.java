@@ -2,7 +2,7 @@ package com.pedroalmeida.management.controller;
 
 
 import com.pedroalmeida.management.model.entity.Appointment;
-import com.pedroalmeida.management.model.enums.Mappings;
+import com.pedroalmeida.shared.Mappings;
 import com.pedroalmeida.management.service.AppointmentService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
