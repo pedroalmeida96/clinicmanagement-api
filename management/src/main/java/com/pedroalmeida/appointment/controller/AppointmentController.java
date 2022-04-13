@@ -1,9 +1,9 @@
-package com.pedroalmeida.management.controller;
+package com.pedroalmeida.appointment.controller;
 
 
-import com.pedroalmeida.management.model.entity.Appointment;
+import com.pedroalmeida.appointment.model.entity.Appointment;
 import com.pedroalmeida.shared.Mappings;
-import com.pedroalmeida.management.service.AppointmentService;
+import com.pedroalmeida.appointment.service.AppointmentService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,13 +24,13 @@ public class AppointmentController {
     @Autowired
     private final AppointmentService service;
 
-    @GetMapping(Mappings.GET_ALL)
+    @GetMapping(Mappings.GET_ALL_APPOINTMENTS)
     public ResponseEntity<List<Appointment>> getAll() {
         List<Appointment> list = service.getAllAppointments();
         return new ResponseEntity<>(list, HttpStatus.OK);
     }
 
-    @GetMapping(Mappings.GET_BY_ID)
+    @GetMapping(Mappings.GET_APPOINTMENTS_BY_ID)
     public ResponseEntity<Appointment> getAppointment(@PathVariable("id") Long id) {
         Optional<Appointment> appointment = service.getById(id);
         return new ResponseEntity(appointment, HttpStatus.OK);

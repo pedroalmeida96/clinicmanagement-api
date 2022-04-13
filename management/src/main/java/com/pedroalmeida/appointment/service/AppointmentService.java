@@ -1,6 +1,6 @@
-package com.pedroalmeida.management.service;
+package com.pedroalmeida.appointment.service;
 
-import com.pedroalmeida.management.model.entity.Appointment;
+import com.pedroalmeida.appointment.model.entity.Appointment;
 
 import java.util.List;
 import java.util.Optional;

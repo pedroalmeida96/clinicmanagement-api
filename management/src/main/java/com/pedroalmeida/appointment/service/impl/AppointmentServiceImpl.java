@@ -1,8 +1,8 @@
-package com.pedroalmeida.management.service.impl;
+package com.pedroalmeida.appointment.service.impl;
 
-import com.pedroalmeida.management.model.entity.Appointment;
-import com.pedroalmeida.management.model.repository.AppointmentRepository;
-import com.pedroalmeida.management.service.AppointmentService;
+import com.pedroalmeida.appointment.model.entity.Appointment;
+import com.pedroalmeida.appointment.model.repository.AppointmentRepository;
+import com.pedroalmeida.appointment.service.AppointmentService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

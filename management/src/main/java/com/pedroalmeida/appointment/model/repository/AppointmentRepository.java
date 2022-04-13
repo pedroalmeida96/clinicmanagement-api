@@ -1,6 +1,6 @@
-package com.pedroalmeida.management.model.repository;
+package com.pedroalmeida.appointment.model.repository;
 
-import com.pedroalmeida.management.model.entity.Appointment;
+import com.pedroalmeida.appointment.model.entity.Appointment;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

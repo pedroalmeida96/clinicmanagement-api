@@ -1,6 +1,6 @@
-package com.pedroalmeida.management.model.entity;
+package com.pedroalmeida.appointment.model.entity;
 
-import com.pedroalmeida.management.model.enums.AppointmentStatus;
+import com.pedroalmeida.appointment.model.enums.AppointmentStatus;
 import com.pedroalmeida.shared.BaseObject;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

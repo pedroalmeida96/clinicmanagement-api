@@ -1,4 +1,4 @@
-package com.pedroalmeida.management.model.enums;
+package com.pedroalmeida.appointment.model.enums;
 
 public enum AppointmentStatus {
     PENDING,
