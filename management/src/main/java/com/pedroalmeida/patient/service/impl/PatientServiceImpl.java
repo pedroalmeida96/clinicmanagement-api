@@ -5,7 +5,6 @@ import com.pedroalmeida.patient.model.repository.PatientRepository;
 import com.pedroalmeida.patient.service.PatientService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,8 +14,7 @@ import java.util.List;
 @Slf4j
 public class PatientServiceImpl implements PatientService {
 
-    @Autowired
-    PatientRepository repository;
+    private final PatientRepository repository;
 
     /**
      * Gets all appointment that are in the future/valid. If the appointment is no longer active its not returned.

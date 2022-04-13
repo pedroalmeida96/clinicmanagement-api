@@ -5,7 +5,6 @@ import com.pedroalmeida.appointment.model.repository.AppointmentRepository;
 import com.pedroalmeida.appointment.service.AppointmentService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,8 +17,7 @@ import java.util.Optional;
 @Slf4j
 public class AppointmentServiceImpl implements AppointmentService {
 
-    @Autowired
-    AppointmentRepository repository;
+    private final AppointmentRepository repository;
 
     /**
      * Gets all appointment that are in the future/valid. If the appointment is no longer active its not returned.

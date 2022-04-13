@@ -5,7 +5,6 @@ import com.pedroalmeida.patient.model.entity.Patient;
 import com.pedroalmeida.patient.service.PatientService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -22,7 +21,6 @@ import java.util.List;
 @AllArgsConstructor
 public class PatientController {
 
-    @Autowired
     private final PatientService service;
 
     @GetMapping("/patients")
