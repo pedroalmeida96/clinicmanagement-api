@@ -1,0 +1,3 @@
+insert into clinicmanagement.appointment values (2,  now() ,'pedro',now(),'pedro',PENDING, 2022-03-18 09:00:00,'Dr. Joao Paula', 'Sr. Pedro Almeida','P1S2' );
+insert into clinicmanagement.doctor values (1,'Afonso Vacuo');
+insert into clinicmanagement.patient values (1,'Passos Dias Aguiar');
