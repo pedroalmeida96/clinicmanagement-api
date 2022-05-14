@@ -4,6 +4,7 @@ import com.pedroalmeida.appointment.model.entity.Appointment;
 import com.pedroalmeida.appointment.model.enums.AppointmentStatus;
 import com.pedroalmeida.appointment.model.repository.AppointmentRepository;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
@@ -46,14 +47,17 @@ class AppointmentServiceImplTest {
     }
 
     @Test
+    @Disabled
     void getById() {
     }
 
     @Test
+    @Disabled
     void updateAppointment() {
     }
 
     @Test
+    @Disabled
     void deleteAppointment() {
     }
 }
