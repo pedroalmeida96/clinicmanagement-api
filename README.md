@@ -14,6 +14,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#running-the-application-locally">Running the application locally</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -22,7 +23,7 @@
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#frontend-application">Frontend application</a></li>
     <li><a href="#endpoints-and-entities-available">Endpoints and entities available</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contacts">Contacts</a></li>
   </ol>
 </details>
 
@@ -33,20 +34,34 @@ Clinic Management Api is a Java application to make the management of doctors, p
 ### Built With
 
 This project uses:
-
 * Java 11
 * [Spring JPA](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/) for database access
 * [Spring Web](https://spring.io/guides/gs/serving-web-content/) to serve HTTP requests
+* Hibernate
+* Lombok
+* Postgres
+* Maven
 
 <!-- GETTING STARTED -->
-### Getting Started
+## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Installation
+<!-- RUNNING THE APPLICATION LOCALLY -->
+### Running the application locally
+
+There are several ways to run a Spring Boot application on your local machine. One way is to execute the `main` method in the `com.pedroalmeida.ClinicManagementApiApplication` class from your IDE.
+
+Alternatively you can use the [Spring Boot Maven plugin](https://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html) like so:
+
+```shell
+mvn spring-boot:run
+```
+
+## Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
@@ -59,16 +74,16 @@ _Below is an example of how you can instruct your audience on installing and set
    mvn clean install
    ```
    
-### Database
+## Database
 This application uses a PostgreSQL database instance and already have a few entries for testing purposes.
 
 <!-- USAGE EXAMPLES -->
-### Usage
+## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 <!-- ENDPOINTS AND ENTITIES -->
-### Endpoints and entities available
+## Endpoints and entities available
 | APPOINTMENTS ENDPOINT    | Type     | Comments |
 |--------------------------|----------| -------- |
 | `/api/appointments`      | `GET`    | Required |
