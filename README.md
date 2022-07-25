@@ -84,41 +84,44 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 <!-- ENDPOINTS AND ENTITIES -->
 ## Endpoints and entities available
-| APPOINTMENTS ENDPOINT    | Type     | Comments |
-|--------------------------|----------| -------- |
-| `/api/appointments`      | `GET`    | Required |
-| `/api/appointments/{id}` | `GET`    | Required |
-| `/api/add`               | `POST`   | Required |
-| `/delete/{id}`           | `DELETE` | Required |
-| `/api/patch/{id}`        | `PATCH`  | Required |
+| Type     | APPOINTMENTS ENDPOINT |
+|----------|---------------------|
+| `GET`    | `/api/appointments` |
+| `GET`    | `/api/appointments/{id}` |
+| `POST`   | `/api/add`          |
+| `DELETE` | `/delete/{id}`      |
+| `PATCH`  | `/api/patch/{id}`   |
 
-| DOCTORS ENDPOINT           | Type     | Comments |
-|----------------------------|----------| -------- |
-| `/api/doctors`             | `GET`    | Required |
-| `/api//doctors/{id}`       | `GET`    | Required |
-| `/api//doctors/add"`       | `POST`   | Required |
-| `/api/doctors/delete/{id}` | `DELETE` | Required |
-| `/api/doctors/patch"`      | `PATCH`  | Required |
+| Type     | DOCTORS ENDPOINT           |
+|----------|----------------------------|
+| `GET`    | `/api/doctors`             |
+| `GET`    | `/api//doctors/{id}`       |
+| `POST`   | `/api//doctors/add"`       |
+| `DELETE` | `/api/doctors/delete/{id}` |
+| `PATCH`  | `/api/doctors/patch"`      |
 
-| PATIENTS ENDPOINT           | Type     | Comments |
-|-----------------------------|----------| -------- |
-| `/api/patients`             | `GET`    | Required |
-| `/api/patients/{id}`        | `GET`    | Required |
-| `/api/patients/add`         | `POST`   | Required |
-| `/api/patients/delete/{id}` | `DELETE` | Required |
-| `/api/patients/patch`       | `PATCH`  | Required |
+| Type     | PATIENTS ENDPOINT           |
+|----------|-----------------------------|
+| `GET`    | `/api/patients`             |
+| `GET`    | `/api/patients/{id}`        |
+| `POST`   | `/api/patients/add`         |
+| `DELETE` | `/api/patients/delete/{id}` |
+| `PATCH`  | `/api/patients/patch`       |
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [ ] Appointments fully implemented.
+    - [X] Implementation
+    - [ ] Testing
+- [ ] Doctors fully implemented.
+    - [ ] Implementation
+    - [ ] Testing
+- [ ] Patients fully implemented.
+    - [ ] Implementation
+    - [ ] Testing
+
 
 <!-- FRONTEND APPLICATION -->
 ## Frontend application
