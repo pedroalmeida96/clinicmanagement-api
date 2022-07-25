@@ -34,6 +34,7 @@ class AppointmentServiceImplTest {
         verify(appointmentRepository).findAll();
     }
 
+
     @Test
     void canInsertAppointment() {
         Appointment appointment = new Appointment(7L, "Pedro Almeida", "Luis Almeida", "Room 2", AppointmentStatus.APPROVED, LocalDate.now());
