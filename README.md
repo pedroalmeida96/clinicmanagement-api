@@ -116,10 +116,10 @@ Use this space to show useful examples of how a project can be used. Additional 
     - [X] Implementation
     - [ ] Testing
 - [ ] Doctors fully implemented.
-    - [ ] Implementation
+    - [X] Implementation
     - [ ] Testing
 - [ ] Patients fully implemented.
-    - [ ] Implementation
+    - [X] Implementation
     - [ ] Testing
 
 
